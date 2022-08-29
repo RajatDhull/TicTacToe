@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    /* display: block; */
+    background: linear-gradient(to right,rgb(77, 57, 57),rgb(131, 33, 49));
+    color: rgb(204, 204, 204);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.game{
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+    /* grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; */
+}
+.box{
+    /* grid-area: .; */
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    cursor: pointer;
+}
+.box:hover{
+    background: radial-gradient(pink,orange,red)
+}
+.bt{
+    border-top:0px;
+}
+.bl{
+    border-left:0px;
+}
+.br{
+    border-right:0px;
+}
+.bb{
+    border-bottom:0px;
+}
+.others{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+}
+.others div{
+    margin: 5px;
+}
+.turn{
+    font-size: 3rem;
+    color: rgb(36, 49, 29);
+}
+
+.others button{
+    font-size: 1.6rem;
+    border: 5px solid orange;
+    border-radius: 4px 10px;
+}
+/* .gif{
+    width:0px;
+} */
+.gif img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
